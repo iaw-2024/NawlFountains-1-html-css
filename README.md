@@ -28,10 +28,11 @@ Se desea desarrollar una serie de páginas web y formularios web que permitan a 
 
 ## Entregables
 
-1. Hacer un fork público de este repositorio, crear una rama o branch denominado `entrega` y realizar los ejercicios en esa rama o branch. 
-2. Configurar GitHub pages sobre ese branch entrega, para que los ejercicios queden disponibles en la web.
-3. Crear un Pull Request del branch `entrega` al branch `main` con un link en la descripción del Pull Request a la página web pública.
-4. El branch `entrega` debe contener:
+1. Crear un [nuevo repositorio](https://github.com/organizations/iaw-2024/repositories/new) público utilizando como template este repositorio (`iaw-2024/ejercicio-tecnico-1-html-css`). El nombre del repositorio debe ser `<usuario-github>-1-html-css` y debe estar dentro de la organización `iaw-2024`.
+3. Crear una rama o branch denominado `entrega` y realizar los ejercicios en esa rama o branch. 
+4. Configurar GitHub pages sobre ese branch entrega, para que los ejercicios queden disponibles en la web.
+5. Crear un Pull Request del branch `entrega` al branch `main` con un link en la descripción del Pull Request a la página web pública.
+6. El branch `entrega` debe contener:
     1. Una carpeta `listado` que contenga tres subcarpetas: `html_css`, `bootstrap`, y `tailwindcss`, cada una con el archivo HTML correspondiente.
     2. una carpeta `formulario` que contenga tres subcarpetas: `html_css`, `bootstrap`, y `tailwindcss`, cada una con el archivo HTML correspondiente.
     3. archivo CSS con los estilos aplicados a la página web, incluyendo la barra de navegación, donde correspondan.
