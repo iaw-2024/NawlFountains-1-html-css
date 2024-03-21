@@ -6,20 +6,33 @@ head,body {
 form {
     background-color: #7B5B4D;
     border-radius: 0.5rem;
-    text-align: center;
     font-weight: bold;
     margin: 2vw 10vw;
     padding: 2vw;
 }
+
+#form_div_lu_dni {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#form_div_lu_dni > div {
+    width: 48%;
+}
 input {
-    margin: 1vw;
-    width: 100%;
+    margin: 1vw 0;
+    padding: 1vw;
+    width: 95%;
     background-color: #D0C1AB;
     border-radius: 0.2rem;
     border: 0;
 }
-#form_div_lu_dni > input {
-    width: 41%;
+
+@media (max-width: 600px) {
+input {
+    margin: 1vw 0;
+    width: 100%;
+}
 }
 input:focus {
     background-color: #71A3C0;
