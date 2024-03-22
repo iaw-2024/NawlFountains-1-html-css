@@ -1,5 +1,6 @@
 head,body {
     text-align: center;
+    font-weight: bold;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: #EFECE3;
 }
@@ -10,7 +11,8 @@ ul {
 }
 
 li {
-    display: flex;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
     color: #D0C1AB;
     background-color: #7B5B4D;
     margin: 1vw;
@@ -18,7 +20,6 @@ li {
 }
 
 li > p {
-    width: 33%;
     padding: 0.5vw;
 }
 
@@ -27,9 +28,14 @@ li:hover {
     background-color: #71A3C0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     li {
+        display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    li > p {
+        margin: 1vw;
+        width: auto;
     }
 }
