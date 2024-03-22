@@ -23,12 +23,21 @@ li > p {
     padding: 0.5vw;
 }
 
-li:hover {
+li:hover:not(#listado_inscripciones_criterios) {
     color: #DE6915;
     background-color: #71A3C0;
 }
 
 @media screen and (max-width: 800px) {
+    li {
+        grid-template-columns: 50% 50%;
+    }
+    li > p {
+        margin: 1vw;
+        width: auto;
+    }
+}
+@media screen and (max-width: 400px) {
     li {
         display: flex;
         flex-direction: column;
@@ -38,4 +47,9 @@ li:hover {
         margin: 1vw;
         width: auto;
     }
+}
+
+#listado_inscripciones_criterios {
+    background-color: #D0C1AB;
+    color: #7B5B4D;
 }
