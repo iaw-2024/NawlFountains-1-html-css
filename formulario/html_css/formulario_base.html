@@ -1,0 +1,37 @@
+<html>
+<head>
+    <link rel="stylesheet" href="formulario_base_style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+</head>
+<body>
+    <div id="header">
+        <a href="../../index.html" id="nav_button">Volver</a>
+        <h1>Formulario inscripcion a mesa de examen</h1>
+    </div>
+    <form>
+        <div id="form_div_nombre">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre"/>
+    </div>
+    <div id="form_div_lu_dni">
+        <div id="form_div_lu">
+            <label for="lu">LU</label>
+            <input type="number" min="0" id="lu"/>
+        </div>
+        <div id="form_div_dni">
+            <label for ="dni">DNI</label>
+            <input type="number" min="0" id="dni"/>
+        </div>
+    </div>
+    <div id="form_div_email">
+        <label for="email">Email</label>
+        <input type="email" id="email"/>
+    </div>
+    <div id="form_div_fecha">
+        <label for ="fecha">Fecha de examen</label>
+        <input type="date" id="fecha"/>
+    </div>
+        <input type="submit" value="Enviar"/>
+    </form>
+</body>
+</html>

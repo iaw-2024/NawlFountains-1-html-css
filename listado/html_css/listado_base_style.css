@@ -1,0 +1,76 @@
+head,body {
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #EFECE3;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+#header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 10% 90%;
+    margin:1vw;
+}
+#nav_button {
+    background-color: #7B5B4D;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: #D0C1AB;
+    font-size: large;
+    padding: 2vw;
+}
+
+li {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    color: #D0C1AB;
+    background-color: #7B5B4D;
+    margin: 1vw;
+    border-radius: 0.5rem;
+}
+
+li > p {
+    padding: 0.5vw;
+}
+
+li:hover:not(#listado_inscripciones_criterios) {
+    color: #DE6915;
+    background-color: #71A3C0;
+}
+
+@media screen and (max-width: 800px) {
+    li {
+        grid-template-columns: 50% 50%;
+    }
+    li > p {
+        margin: 1vw;
+        width: auto;
+    }
+    #header {
+        display: flex;
+        flex-direction: column;
+    }
+    #nav_button {
+        
+        width: 95%;
+    }
+}
+@media screen and (max-width: 400px) {
+    li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    li > p {
+        margin: 1vw;
+        width: auto;
+    }
+}
+
+#listado_inscripciones_criterios {
+    background-color: #D0C1AB;
+    color: #7B5B4D;
+}
