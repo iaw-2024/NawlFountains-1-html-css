@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="header" class="grid grid-cols-12 p-5 text-xl space-y-4 sm:space-y-0 w-full lg:w-2/3 lg:mx-auto">
+        <a href="../../index.html" class="text-center col-span-12 sm:col-span-2 bg-blue-200 rounded-lg">Volver</a>
+        <h1 class="text-center col-span-12 sm:col-span-10">Formulario inscripcion a mesa de examen</h1>
+    </div>
+    <div class="justify-content">
+        <form class="p-5 p-0 border-2 rounded-4 shadow text-center space-y-8 w-full lg:w-2/3 lg:mx-auto">
+            <div id="form_div_nombre" class="sm:col-span-12 space-y-3">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" class="pl-2 w-full rounded-md border-0 py-1.5 ring-1"/>
+        </div>
+        <div id="form_div_lu_dni" class="sm:grid sm:grid-cols-6 sm:space-x-2 space-y-10 sm:space-y-0 justify-content">
+            <div id="form_div_lu" class="sm:col-span-3 space-y-3">
+                <label for="lu">LU</label>
+                <input type="number" min="0" id="lu" class="pl-2 w-full rounded-md border-0 py-1.5 ring-1"/>
+            </div>
+            <div id="form_div_dni" class="sm:col-span-3 space-y-3">
+                <label for ="dni">DNI</label>
+                <input type="number" min="0" id="dni" class="pl-2 w-full rounded-md border-0 py-1.5 ring-1"/>
+            </div>
+        </div>
+        <div id="form_div_email" class="space-y-3">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="pl-2 w-full rounded-md border-0 py-1.5 ring-1"/>
+        </div>
+        <div id="form_div_fecha" class="space-y-3">
+            <label for ="fecha">Fecha de examen</label>
+            <input type="date" id="fecha" class="text-center w-full rounded-md border-0 py-1.5 ring-1"/>
+        </div>
+            <input type="submit" value="Enviar" class="w-full sm:w-1/2 rounded-md border-0 py-1.5 ring-1"/>
+        </form>
+    </div>
+</body>
+</html>

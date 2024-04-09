@@ -1,0 +1,79 @@
+head,body {
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #EFECE3;
+}
+#header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 15% 85%;
+    margin: 2vw 8vw;
+    padding: 2vw;
+}
+#nav_button {
+    background-color: #7B5B4D;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: #D0C1AB;
+    font-size: large;
+    padding: 2vw;
+}
+form {
+    background-color: #7B5B4D;
+    border-radius: 0.5rem;
+    margin: 2vw 10vw;
+    padding: 2vw;
+}
+
+#form_div_lu_dni {
+    display: flex;
+    justify-content: space-between;
+}
+#form_div_lu_dni > div {
+    width: 49%;
+}
+
+
+input {
+    margin: 1vw 0;
+    padding: 1vw;
+    width: 100%;
+    background-color: #D0C1AB;
+    border-radius: 0.2rem;
+    border: 0;
+}
+#form_div_lu_dni > input {
+    width: 50%;
+}
+
+@media (max-width: 800px) {
+    #header {
+        display: flex;
+        flex-direction: column;
+    }
+    #nav_button {
+        width: 95%;
+    }
+}
+
+@media (max-width: 600px) {
+    input {
+        margin: 1vw 0;
+        width: 100%;
+    }
+    #form_div_lu_dni {
+        flex-direction: column;
+    }
+    #form_div_lu_dni > div {
+        width: 100%;
+    }
+}
+input:focus {
+    background-color: #71A3C0;
+}
+label {
+    color: #D0C1AB
+}
+label:focus {
+    color: #DE6915;
+}
